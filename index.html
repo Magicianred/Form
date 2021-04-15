@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="sortcut icon" href="icon/form.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--Cabeçalho com título e subtitulo-->
+    <div>
+        <h1 id="tittle">Cadastro de DEVs</h1>
+        <p id="caption">Complete suas informações</p>
+        <br>
+    </div>
+    <!--Início do formulário-->
+    <form>
+
+        <fieldset class="group">
+            <!--Campo do nome com legenda "name" e css com classe "field"-->
+            <div class="field">
+                <label for="name"><strong>Nome</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <!--Campo do sobrenome com legenda "surname" e css com classe"field"-->
+            <div class="field">
+                <label for="surname"><strong>Sobrenome</strong></label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+        </fieldset>
+        <!--Campo de email com legenda "email" e css com classe "field"-->
+        <div class="field">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <!--Campo de desenvolvimento com 3 opções com botões selecionáveis-->
+        <div class="field">
+            <label><strong>Qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="dev" value="frontend" checked>Front-End
+            </label>
+            <label>
+                <input type="radio" name="dev" value="backend">Back-End
+            </label>
+            <label>
+                <input type="radio" name="dev" id="fullstack">Fullstack
+            </label>
+        </div>
+        <!--Campo de senioridade com 3 opções de escolhas selecionáveis-->
+        <div class="field">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+        <!--Campo das tecnologias para escolher 1 ou mais opções para marcar-->
+        <fieldset class="group">
+            <div class="check">
+                <label><strong>Selecione as tecnologias que você utiliza</strong></label>
+                <input type="checkbox" id="technology1" name="technology1" value="HTML">
+                <label for="technology1">HTML</label>
+                <input type="checkbox" 
+                id="technology2"
+                name="technology2"  value="CSS">
+                <label for="technology2">CSS</label>
+                <input type="checkbox" id="technology3" name="technology3" value="JavaScript">
+                <label for="technology3">JavaScript</label>
+                <input type="checkbox" id="technology4" name="technology4" value="PHP">
+                <label for="technology4">PHP</label>
+                <input type="checkbox" id="technology5" name="technology5" value="Python">
+                <label for="technology5">Python</label>
+                <input type="checkbox" id="technology6" name="technology6" value="Java">
+                <label for="technology6">Java</label>
+                <input type="checkbox" id="technology7" name="technology7" value="C#">
+                <label for="technology7">C#</label>
+            </div>
+        </fieldset>
+        <!--Caixa de texto-->
+        <div class="field">
+            <br>
+            <label><strong>Conte um pouco sobre a sua experiência</strong></label>
+            <textarea rows="6" style="width: 26em" id="experience" name="experience"></textarea>
+        </div>
+
+        <!--Botão para envio do formulário-->
+        <button class="button" type="submit" onsubmit="">Concluído</button>
+    </form>
+</body>
+</html>

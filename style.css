@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Elementos da tag <body> */
+body {
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+/* Elememtos da ID "tittle" */
+#tittle {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+}
+/* Elementos da ID "caption" */
+#caption { 
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 11%;
+}
+/* Elementos da tag <fieldset> */
+fieldset {
+    border : 0;
+}
+/* Elementos da tag <input>, <Select>, <textarea> e <button>*/
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+/*Elementos da classe "group" com pseudoclasses "before" e "after" */
+.group:before, .group:after {
+    display: table;
+}
+/* Elementos da classe "group" com o estado de pseudoclasse "afeter" */
+.group:after {
+    clear: both;
+}
+/* Elementos da classe "field" */
+.field {
+    margin-bottom: 1em;
+}
+/* Elementos da classe "field" com tag <label> */
+.field label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+/* Elementos da classe "field" ou grupo "group" de tag <fieldset>*/
+fieldset.group .field {
+    float: left;
+    margin-right: 1em;
+}
+/* Elementos de classe "field" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.field input[type="text"], .field input[type="email"], .field select, .field textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+/* Elementos de classe "field" de tag <select> e <option>*/
+.field select option {
+    padding-right: 1em;
+}
+/* Elemento de classe "field" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.field input:focus, .field select:focus, .field textarea:focus {
+    background-color: #E0E0F8;
+}
+/* Elemento de classe "button" */
+.button {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+/* Elemento de classe "button" com o estado da pseudoclasse "hover" */
+.button:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+#check {
+    display: inline-block;
+}
+/* Elementos de classe button e de tag <select> */
+.button, select {
+    cursor: pointer;
+}
