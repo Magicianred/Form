@@ -1,4 +1,5 @@
-![image_form](https://user-images.githubusercontent.com/71856519/114935760-f6f7ce00-9e11-11eb-9a04-d7cfcd3c79a2.png)
+![Screenshot_1](https://user-images.githubusercontent.com/71856519/114936842-5a363000-9e13-11eb-922d-8b54ea09c162.png)
+
 
 <h1>Creating form for developers</h1>
 
